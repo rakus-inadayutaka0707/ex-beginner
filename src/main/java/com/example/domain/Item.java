@@ -3,6 +3,7 @@ package com.example.domain;
 public class Item {
 	private String name;
 	private Integer price;
+<<<<<<< HEAD
 	
 	public Item() {
 	}
@@ -12,6 +13,8 @@ public class Item {
 		this.name = name;
 		this.price = price;
 	}
+=======
+>>>>>>> 17fe445e7d2cc63ae7dd197a9ce8869c21ad7c90
 
 	public String getName() {
 		return name;
