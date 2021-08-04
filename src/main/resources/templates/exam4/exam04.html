@@ -7,12 +7,17 @@
 <body>
 	<h1>ユーザ登録</h1>
 	<form th:action="@{/exam4/form}" th:object="${userForm}" method="post">
+		<span th:errors="*{name}" style="color:red">エラー！</span><br>
 		<label for="name">名前:</label>
 		<input type="text" name="name" id="name" th:field="*{name}"><br>
+		
+		<span th:errors="*{age}" style="color:red">エラー！</span><br>
 		<label for="age">年齢:</label>
 		<input type="text" name="age" id="age" th:field="*{age}"><br>
+		
+		<span th:errors="*{comment}" style="color:red">エラー！</span><br>
 		<label for="comment">コメント:</label><br>
-		<textarea name="comment" id="comment" th:field="*{comment}"></textarea>
+		<textarea name="comment" id="comment" th:field="*{comment}" cols="30" rows="4"></textarea><br>
 		<button>登録</button>
 	</form>
 </body>
